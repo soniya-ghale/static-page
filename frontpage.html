@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body
+    class="bg-[#fcf8f2] text-[#222] font-sans"
+    onload="lucide.createIcons();"
+  >
+    <!-- Header -->
+    <header
+      class="bg-[#2d2d2d] text-white flex justify-between items-center px-4 sm:px-6 md:px-10 py-4 md:py-6"
+    >
+      <div class="text-sm font-bold">J-Shop</div>
+      <nav class="hidden space-x-4 sm:space-x-6 text-xs uppercase md:flex">
+        <a href="#" class="hover:underline">Categories</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Shop</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-3 sm:space-x-4 text-sm text-white">
+        <button>
+          <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </button>
+        <button>
+          <i data-lucide="shopping-cart" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </button>
+        <button>
+          <i data-lucide="user" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[#2d2d2d] text-white py-12 md:py-16">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-24 px-6 max-w-7xl mx-auto"
+      >
+        <div class="py-4 md:py-8 w-full md:w-auto text-center md:text-left">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif mb-2 md:mb-4 text-[#FFEBB5] tracking-[0.2em] md:tracking-[0.3em] leading-tight"
+          >
+            <span class="block mb-2 md:mb-4">JEWELRY</span>
+            COLLECTION
+          </h1>
+        </div>
+
+        <div
+          class="w-full max-w-xs sm:max-w-sm md:w-72 md:h-[400px] lg:h-[465px] rounded-t-[15rem] md:rounded-t-[20rem] overflow-hidden"
+        >
+          <img
+            src="./images-frontend/image1.png"
+            alt="Luxury jewelry collection"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#FFFBF0]">
+      <!-- Intro Section -->
+      <section class="max-w-6xl px-4 sm:px-6 py-12 md:py-16 mx-auto">
+        <div class="grid gap-8 md:gap-10 md:grid-cols-2">
+          <div>
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif mb-4 md:mb-6 leading-tight"
+            >
+              Jewelry speaks volumes of stories
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-6 sm:gap-10 text-sm">
+              <div class="flex-1">
+                <h4 class="font-serif text-lg">GOLD</h4>
+                <p class="text-sm text-[#7A3838] mt-2">
+                  Her sharp perception encompassed two deliberate intentions
+                </p>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-serif text-lg">SILVER</h4>
+                <p class="text-sm text-[#7A3838] mt-2">
+                  Her sharp perception encompassed two deliberate intentions
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-serif text-xl md:text-2xl">Our Journey</h4>
+            <p class="text-sm md:text-base text-[#7A3838] mb-4 mt-2">
+              Contemporary jewelry often incorporates gold, silver, or platinum
+              alongside precious or semi-precious gemstones.
+            </p>
+            <div class="h-32 sm:h-40 w-full max-w-xs">
+              <img
+                src="./images-frontend/ring4.png"
+                alt="Our jewelry craftsmanship"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rings Section -->
+      <section class="max-w-6xl px-4 sm:px-6 py-10 md:py-12 mx-auto">
+        <div class="relative">
+          <div class="w-full h-56 sm:h-72 md:h-96 overflow-hidden">
+            <img
+              src="./images-frontend/ring.png"
+              alt="Featured ring collection"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div
+            class="hidden md:block absolute bottom-0 right-0 w-32 h-40 sm:w-40 sm:h-48 md:w-56 md:h-64 transform -translate-x-4 sm:-translate-x-6 translate-y-1/2 border-4 border-white"
+          >
+            <img
+              src="./images-frontend/image2.png"
+              alt="Ring detail close-up"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="mt-6 w-full md:w-[580px]">
+          <p class="text-sm text-[#7A3838]">
+            Jewelry in modern times typically consists of gold, silver, or
+            platinum, frequently complemented by precious or semi-precious
+            stones.
+          </p>
+        </div>
+      </section>
+
+      <!-- Promise Ring -->
+      <section class="max-w-6xl px-4 sm:px-6 py-12 md:py-16 mx-auto">
+        <div
+          class="grid gap-8 md:gap-12 md:grid-cols-2 justify-center items-center"
+        >
+          <div class="order-2 md:order-1">
+            <h2 class="text-xl md:text-2xl font-serif mb-4">Promise Ring</h2>
+            <p class="text-sm text-[#7A3838] mb-4">
+              Our skilled team of 3D modelers and artisans has the capability to
+              craft any ring design you can dream of, no matter how intricate.
+            </p>
+            <button
+              class="px-4 py-2 text-xs border border-[#7A3838] hover:bg-[#7A3838] hover:text-white transition-colors"
+            >
+              View Categories
+            </button>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="w-full h-56 sm:h-64 md:h-72 overflow-hidden">
+              <img
+                src="./images-frontend/rring2.png"
+                alt="Promise ring collection"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Custom Creations -->
+      <section class="max-w-6xl px-4 sm:px-6 py-12 md:py-16 mx-auto">
+        <div
+          class="grid gap-8 md:gap-12 md:grid-cols-2 justify-center items-center"
+        >
+          <div>
+            <div class="w-full h-56 sm:h-64 md:h-72 overflow-hidden">
+              <img
+                src="./images-frontend/ringGroup.png"
+                alt="Custom jewelry creations"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl md:text-2xl font-serif mb-4">
+              Customized Jewelry Creations
+            </h2>
+            <p class="text-sm text-[#7A3838] mb-4">
+              Our skilled team can bring any ring design to life, no matter how
+              intricate. Now available for private clients.
+            </p>
+            <button
+              class="px-4 py-2 text-xs border border-[#7A3838] hover:bg-[#7A3838] hover:text-white transition-colors"
+            >
+              Go to Shop
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lifestyle Section -->
+      <section class="max-w-6xl px-4 sm:px-6 py-12 md:py-16 mx-auto">
+        <div
+          class="grid gap-8 md:gap-12 md:grid-cols-2 justify-center items-center"
+        >
+          <div>
+            <h2 class="text-xl md:text-2xl font-serif mb-4">
+              There are no boundaries to the lifestyle you deserve.
+            </h2>
+            <p class="text-sm text-[#7A3838] mb-4">
+              Our expert team can create any design, including intricate ones.
+              Now serving private clients with designer-quality pieces.
+            </p>
+            <button
+              class="px-4 py-2 text-xs border border-[#7A3838] hover:bg-[#7A3838] hover:text-white transition-colors"
+            >
+              Read More
+            </button>
+          </div>
+          <div>
+            <div class="w-full h-64 sm:h-80 md:h-96 overflow-hidden">
+              <img
+                src="./images-frontend/necklace.png"
+                alt="Luxury lifestyle jewelry"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles -->
+      <section
+        class="max-w-6xl px-4 sm:px-6 py-12 md:py-16 mx-auto text-center"
+      >
+        <div class="mb-8 md:mb-12">
+          <h2 class="text-xl md:text-2xl font-serif">Our Articles</h2>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Discover more about our jewelry.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
+          <div>
+            <div class="w-full h-48 sm:h-56 md:h-64 mb-4 overflow-hidden">
+              <img
+                src="./images-frontend/ring3.png"
+                alt="Elegant jewelry designs"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="text-left">
+              <h4 class="font-serif text-lg">For Elegance</h4>
+              <p class="mt-2 text-sm text-[#7A3838]">
+                Involving Belonging Promotion Provision Can Be Consulted.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-full h-56 sm:h-64 md:h-80 mb-4 overflow-hidden">
+              <img
+                src="./images-frontend/earring.png"
+                alt="Premium quality jewelry"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="text-left">
+              <h4 class="font-serif text-lg">Product Superiority</h4>
+              <p class="mt-2 text-sm text-[#7A3838]">
+                Ladyship graciously embraced the blessing as she met Sir with
+                charm.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-full h-48 sm:h-56 md:h-64 mb-4 overflow-hidden">
+              <img
+                src="./images-frontend/necklace2.png"
+                alt="Handcrafted jewelry pieces"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="text-left">
+              <h4 class="font-serif text-lg">Skillfully Designed</h4>
+              <p class="mt-2 text-sm text-[#7A3838]">
+                As cousins and men gathered, warmth filled the assembly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="border border-[#FFEBB5] text-xs text-gray-600 py-10 md:py-12"
+      >
+        <div
+          class="grid gap-6 md:gap-8 px-4 sm:px-6 max-w-6xl mx-auto md:grid-cols-4"
+        >
+          <div>
+            <h4 class="mb-3 text-sm md:text-base font-bold">Product</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Email Row</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Free Tools</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Agents</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-3 text-sm md:text-base font-bold">Resources</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Our Agents</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Member Stories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Video</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Free Trial</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-3 text-sm md:text-base font-bold">Company</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Partnerships</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Terms of Use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm text-[#7A3838] hover:underline"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-3 text-sm md:text-base font-bold">Newsletter</h4>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              class="w-full px-3 py-2 text-sm border border-[#7A3838] focus:outline-none focus:ring-1 focus:ring-[#7A3838]"
+            />
+            <button
+              class="mt-2 px-4 py-2 text-xs bg-[#7A3838] text-white hover:bg-[#5a2a2a] transition-colors"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center mt-8 space-x-4">
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="inline-flex items-center justify-center w-8 h-8 bg-black text-[#FFEBB5] border-2 border-white hover:text-[#1DA1F2] transition-colors duration-300"
+          >
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="inline-flex items-center justify-center w-8 h-8 bg-black text-[#FFEBB5] border-2 border-white hover:text-[#1DA1F2] transition-colors duration-300"
+          >
+            <i data-lucide="facebook" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="inline-flex items-center justify-center w-8 h-8 bg-black text-[#FFEBB5] border-2 border-white hover:text-[#1DA1F2] transition-colors duration-300"
+          >
+            <i data-lucide="twitter" class="w-5 h-5"></i>
+          </a>
+        </div>
+        <p class="mt-6 text-xs text-center text-[#7A3838]">
+          Copyright © 2023 Jewelry. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

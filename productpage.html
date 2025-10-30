@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body
+    class="bg-[#fcf8f2] text-[#222] font-sans"
+    onload="lucide.createIcons();"
+  >
+    <!-- Header navbar -->
+    <header
+      class="bg-[#2d2d2d] text-white flex justify-between items-center px-4 sm:px-6 md:px-10 py-4 md:py-6"
+    >
+      <div class="text-sm font-bold">J-Shop</div>
+      <nav class="hidden space-x-4 sm:space-x-6 text-xs uppercase md:flex">
+        <a href="#" class="hover:underline">Categories</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Shop</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-3 sm:space-x-4 text-sm text-white">
+        <button>
+          <i
+            data-lucide="user"
+            data-lucide="search"
+            class="w-4 h-4 sm:w-5 sm:h-5"
+          ></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section  -->
+    <section class="bg-[#2d2d2d] text-[#FFEBB5] py-12 md:py-16">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-24 px-6 max-w-7xl mx-auto"
+      >
+        <div>
+          <h1 class="text-4xl md:text-6xl font-serif leading-tight">
+            <span class="block mb-2 md:mb-4"> Introducing The</span>
+
+            Lost Day Collection
+          </h1>
+          <button
+            class="mt-6 text-[#b02c2c] bg-white border border-2 border-[#b02c2c] font-bold px-8 md:py-3 py-2"
+          >
+            Shop Now
+          </button>
+        </div>
+
+        <div
+          class="w-full max-w-xs sm:max-w-sm md:w-72 md:h-[400px] lg:h-[465px] rounded-t-[15rem] md:rounded-t-[20rem] overflow-hidden"
+        >
+          <img
+            src="./images-frontend/image1.png"
+            alt="Luxury jewelry collection"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#FFFBF0]">
+    <!-- Category Section -->
+    <section
+      class="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 py-12"
+    >
+      <div class="bg-[#3b3b3b] flex gap-4 text-white p-6">
+        <div class="w-full">
+          <p class="text-base tracking-widest text-[#FFEBB5]">NEW COLLECTION</p>
+          <h3 class="mt-2 text-xl font-semibold">Some kinda jewelry</h3>
+          <p class="text-xs mt-1">SHOP NOW</p>
+        </div>
+        <div class="h-32 sm:h-40 w-full max-w-xs">
+          <img
+            src="./images-frontend/necklace3.png"
+            class="h-32 sm:h-40 w-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="bg-[#3b3b3b] flex gap-4 text-white p-6">
+        <div class="w-full">
+          <p class="text-base tracking-widest text-[#FFEBB5]">NEW COLLECTION</p>
+          <h3 class="mt-2 text-xl font-semibold">Some kinda jewelry</h3>
+          <p class="text-xs mt-1">SHOP NOW</p>
+        </div>
+        <div class="h-32 sm:h-40 w-full max-w-xs">
+          <img
+            src="./images-frontend/hoolahoops.png"
+            class="h-32 sm:h-40 w-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="bg-[#3b3b3b] flex gap-4 text-white p-6">
+        <div class="w-full">
+          <p class="text-base tracking-widest text-[#FFEBB5]">NEW COLLECTION</p>
+          <h3 class="mt-2 text-xl font-semibold">Some kinda jewelry</h3>
+          <p class="text-xs mt-1">SHOP NOW</p>
+        </div>
+        <div
+          class="h-32 sm:h-40 w-full flex items-center justify-center max-w-xs"
+        >
+          <img src="./images-frontend/ring4.png" class="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Collection -->
+    <section class="text-center py-12 relative max-w-7xl mx-auto">
+      <h4 class="font-serif text-xl md:text-2xl mb-8">Popular Collection</h4>
+
+      <!-- Arrows (hidden on large screens) -->
+      <button
+        id="scrollLeft"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-[#b02c2c] text-white shadow p-2 rounded-full z-10 hover:bg-[#8e2323] lg:hidden"
+      >
+        &#8592;
+      </button>
+      <button
+        id="scrollRight"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-[#b02c2c] text-white shadow p-2 rounded-full z-10 hover:bg-[#8e2323] lg:hidden"
+      >
+        &#8594;
+      </button>
+
+      <!-- Scroll Container -->
+      <div
+        id="scrollContainer"
+        class="flex gap-14 overflow-x-hidden scrollbar-hide scroll-smooth px-10"
+      >
+        <!-- Item -->
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Ring
+          </button>
+        </div>
+        <!-- Repeat Items -->
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Necklace
+          </button>
+        </div>
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Bracelet
+          </button>
+        </div>
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Earrings
+          </button>
+        </div>
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Watch
+          </button>
+        </div>
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Pendant
+          </button>
+        </div>
+        <div class="shrink-0 grid gap-3 w-32">
+          <div
+            class="bg-[#D9D9D9] w-32 h-32 flex items-center justify-center rounded-full p-6"
+          >
+            <img
+              src="./images-frontend/ring6.png"
+              class="h-32 sm:h-32 w-32 object-cover"
+            />
+          </div>
+          <button class="px-6 py-2 text-base bg-[#D9D9D9] text-[#b02c2c]">
+            Brooch
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trendy Collection -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <div class="mb-8 text-center md:mb-12">
+        <h2 class="text-xl md:text-2xl font-serif">Trendy Collection</h2>
+        <p class="text-sm text-[#7A3838] mt-2">
+          Elevate your sparkle with our elegant jewelry collection.
+        </p>
+      </div>
+      <!-- <h2 class="text-3xl font-serif text-center">Trendy Collection</h2> -->
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+        <!-- Card 1 -->
+        <!-- <div>
+          <div class="bg-[#3b3b3b] text-white relative">
+            <div
+              class="absolute top-4 left-4 grid gap-2 text-center font-bold z-10"
+            >
+              <span class="bg-white text-black text-xs px-6 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-6 py-1"
+                >-20%</span
+              >
+            </div>
+            <img
+              src="./images-frontend/ring6.png"
+              alt="Ring"
+              class="w-full h-60 object-cover"
+            />
+          </div>
+
+          <div class="p-4">
+            <p class="text-sm text-[#7A3838] mt-2">New and Sale Product</p>
+            <p class="mt-2 text-sm">
+              <span class="font-semibold">$39.00</span>
+              <span class="line-through text-sm">$47.00</span>
+            </p>
+          </div>
+        </div> -->
+
+        <!-- USE ANY OF THE CARD  -->
+        <!-- Card 1-->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/ring6.png"
+                class="h-40 sm:h-32 w-40 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">New and Sale Product</p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $39.00 </span>
+            <span class="line-through text-sm">$47.00</span>
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/earring2.png"
+                class="h-40 sm:h-32 w-52 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">New and Sale Product</p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $39.00 </span>
+            <span class="line-through text-sm">$47.00</span>
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/necklace4.png"
+                class="h-40 sm:h-32 w-52 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Adorn your neckline with elegance
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $75.00 </span>
+            <!-- <span class="line-through text-sm">$47.00</span> -->
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-10%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/hoolahoops.png"
+                class="h-40 sm:h-32 w-52 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Accentuate your elegance with our special earrings
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $95.00 </span>
+            <span class="line-through text-sm">$93.00</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Newest -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div class="bg-[#D9D9D9] py-6 px-4 sm:px-8 flex justify-center">
+        <div
+          class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left"
+        >
+          <p class="text-sm sm:text-base md:text-lg text-[#7A3838] font-bold">
+            Find Newest collection in our site.
+          </p>
+          <button
+            class="px-5 sm:px-6 py-2 border border-[#b02c2c] border-2 text-sm sm:text-base md:text-lg font-bold text-[#7A3838] hover:bg-[#7A3838] hover:text-white transition-colors duration-300"
+          >
+            Find Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autum Collection -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <div class="mb-8 text-center md:mb-12">
+        <h2 class="text-xl md:text-2xl font-serif">Autum Collection</h2>
+        <p class="text-sm text-[#7A3838] mt-2">
+          Elevate your sparkle with our elegant jewelry collection.
+        </p>
+
+        <div class="w-72 items-center mx-auto mt-4">
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full px-3 py-2 text-sm border border-[#7A3838] bg-[#3b3b3b] focus:outline-none focus:ring-1 focus:ring-[#7A3838]"
+          />
+        </div>
+      </div>
+
+      <!-- First -->
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+        <!-- Card 1-->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/ring6.png"
+                class="h-40 sm:h-32 w-40 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">New and Sale Product</p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $39.00 </span>
+            <span class="line-through text-sm">$47.00</span>
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/earring2.png"
+                class="h-40 sm:h-32 w-52 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">New and Sale Product</p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $39.00 </span>
+            <span class="line-through text-sm">$47.00</span>
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/necklace4.png"
+                class="h-40 sm:h-32 w-52 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Adorn your neckline with elegance
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $75.00 </span>
+            <!-- <span class="line-through text-sm">$47.00</span> -->
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-10%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/hoolahoops.png"
+                class="h-40 sm:h-32 w-52 object-cover"
+              />
+            </div>
+            <div></div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Accentuate your elegance with our special earrings
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $95.00 </span>
+            <span class="line-through text-sm">$93.00</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Second -->
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+        <!-- Card 1-->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/necklace3.png"
+                class="h-40 sm:h-32 w-40 object-cover"
+              />
+            </div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Adorn your neckline with elegance
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $39.00 </span>
+            <span class="line-through text-sm">$47.00</span>
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/ring7.png"
+                class="h-40 sm:h-32 w-40 object-cover"
+              />
+            </div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Enhance your fingers with our exquisite ring collection
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $57.00 </span>
+            <!-- <span class="line-through text-sm">$47.00</span> -->
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-20%</span
+              >
+            </div>
+            <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/necklace5.png"
+                class="h-40 sm:h-32 w-40 object-cover"
+              />
+            </div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Adorn your neckline with our special necklace collection
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $75.00 </span>
+            <!-- <span class="line-through text-sm">$47.00</span> -->
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div>
+          <div class="bg-[#3b3b3b] text-white p-4">
+            <div class="grid gap-4 w-20 text-center font-bold">
+              <span class="bg-white text-black text-xs px-2 py-1">New</span>
+              <span class="bg-yellow-200 text-black text-xs px-2 py-1"
+                >-10%</span
+              >
+            </div>
+               <div
+              class="mt-4 w-full sm:h-40 h-40 flex items-center max-w-xs justify-center"
+            >
+              <img
+                src="./images-frontend/ring5.png"
+                class="h-40 sm:h-32 w-40 object-cover"
+              />
+            </div>
+          </div>
+          <p class="text-sm text-[#7A3838] mt-2">
+            Wear our new and soeacial ring
+          </p>
+          <p class="mt-2 text-sm">
+            <span class="font-semibold"> $45.00 </span>
+            <span class="line-through text-sm">$93.00</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Paginator -->
+      <div class="flex gap-4 justify-center items-center space-x-2 mt-10">
+        <!-- Previous Button -->
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-700 bg-gray-200 hover:bg-[#7A3838] hover:text-white transition duration-300"
+        >
+          <p><</p>
+        </button>
+
+        <!-- Page Numbers -->
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-700 bg-gray-200 hover:bg-[#7A3838] hover:text-white transition duration-300"
+        >
+          1
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-700 bg-gray-200 hover:bg-[#7A3838] hover:text-white transition duration-300"
+        >
+          2
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-700 bg-gray-200 hover:bg-[#7A3838] hover:text-white transition duration-300"
+        >
+          3
+        </button>
+
+        <!-- Next Button -->
+        <button
+          class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-700 bg-gray-200 hover:bg-[#7A3838] hover:text-white transition duration-300"
+        >
+          <p>></p>
+        </button>
+      </div>
+    </section>
+
+    </div>
+  </body>
+</html>
+
+<script>
+  const scrollContainer = document.getElementById("scrollContainer");
+  document.getElementById("scrollLeft").addEventListener("click", () => {
+    scrollContainer.scrollBy({ left: -200, behavior: "smooth" });
+  });
+  document.getElementById("scrollRight").addEventListener("click", () => {
+    scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
+  });
+</script>
